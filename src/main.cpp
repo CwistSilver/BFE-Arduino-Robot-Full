@@ -1,4 +1,5 @@
 #include "BFEArduinoRobotFramework.h"
+#include <Arduino.h>
 
 // 1: Links, 2: Rechts, 3: Rückwärts
 int getNewDirection()
