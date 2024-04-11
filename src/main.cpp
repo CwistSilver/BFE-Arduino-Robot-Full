@@ -22,13 +22,13 @@ int getNewDirection()
 void setup()
 {
   arduinoSetup();
-  motorController.driveForward();
+  motorController.setDirection(motorController.FORWARD);
 }
 
 void loop()
 {
   if (sensorController.getDistance() > 10)
-    motorController.update();
+    motorController.drive();
   else
   {
     motorController.stop();
