@@ -31,7 +31,7 @@ void loop()
     motorController.drive();
   else
   {
-    motorController.stop();
+    motorController.setDirection(motorController.NONE);
     int newDirection = getNewDirection();
     if (newDirection == 1)
       motorController.leftTurn(90);
