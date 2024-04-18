@@ -40,5 +40,6 @@ void loop()
     else if (newDirection == 3)
       motorController.rightTurn(180);
     delay(1000);
+    motorController.setDirection(motorController.FORWARD);
   }
 }
